@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appEsqueci.Views.PagPrincipal" IsPresented="True">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Image Source="esqueci2.png" HorizontalOptions="Center"/>
+                <Label Text="Esqueci" FontSize="Large" Margin="0,0,0,50"/>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info2.png"/>
+                    <Button x:Name="Bt_Home" Text="Home" 
+                            Clicked="Bt_Home_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="inserir.png"/>
+                    <Button x:Name="Bt_Cadastrar" Text="Cadastrar" 
+                            Clicked="Bt_Cadastrar_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="localizar.png"/>
+                    <Button x:Name="Bt_Listar" Text="Listar" 
+                            Clicked="Bt_Listar_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png"/>
+                    <Button x:Name="Bt_Sobre" Text="Sobre" 
+                            Clicked="Bt_Sobre_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+           
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Page Principal">
+            <Label x:Name="testedb"  Text="Alô Mundo"/>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

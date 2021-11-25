@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appEsqueci.Views.PagCadastro" Title="Cadastro e alteração de notas" BackgroundColor="Aquamarine">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Txt_Codigo" IsVisible="false" IsEnabled="False" TextColor="Black" PlaceholderColor="Black"></Entry>
+            <Label Text="Cadastrar Nota" FontSize="Large" TextColor="Black" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="Txt_Titulo" Placeholder="Título da nota" TextColor="Black" PlaceholderColor="Black"/>
+            
+            <StackLayout Orientation="Vertical">
+                <Label Text="Favorito" FontSize="Medium" TextColor="black"/>
+                <Switch x:Name="Sw_Favorito" HorizontalOptions="Start" OnColor="Black"/>
+            </StackLayout>
+            
+            <Editor x:Name="Txt_Dados" Placeholder="Conteúdo da nota" VerticalOptions="FillAndExpand" Margin="20" TextColor="Black" PlaceholderColor="black"/>
+            <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                <Button x:Name="Btn_Salvar" Text="Inserir" Clicked="Btn_Salvar_Clicked" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="Btn_Excluir" Text="Excluir" Clicked="Btn_Excluir_Clicked" HorizontalOptions="FillAndExpand" IsVisible="false"/>
+                <Button x:Name="Btn_Cancelar" Text="Cancelar" Clicked="Btn_Cancelar_Clicked" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+      
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
